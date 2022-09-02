@@ -12,11 +12,14 @@ namespace Inheritance2
             ImagePost imagePost1 = new ImagePost("Check my new shoes", "damiansoch", "https://imahes.com/shoes", true);
             Console.WriteLine(imagePost1.ToString());
 
-            VideoPost videoPost1 = new VideoPost("My new video", "damiansoch", "http://videoURL.com", 1.21f, true);
+            VideoPost videoPost1 = new VideoPost("My new video", "damiansoch", "http://videoURL.com", 10, true);
             Console.WriteLine(videoPost1.ToString());
             videoPost1.Play();
+            Console.WriteLine("Press any key to stop the video");
+            Console.ReadKey();
+            videoPost1.Stop();
             Console.ReadLine();
-
         }
     }
 }
+
